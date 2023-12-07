@@ -1,0 +1,52 @@
+# All dev environment properties are present over here
+applog_suffix:
+  'log_dashboard.log'
+applog_prefix:
+  '%Y_%m_%d'
+applog_message_format:
+  '[%(asctime)s GMT] %(levelname)s::%(funcName)s() %(message)s'
+log_analysis_options:
+  MISRA_Warnings: 
+    'MISRA Warnings'
+  Compiler_Warnings: 
+    'Compiler Warnings'
+log_analysis_valid_file_patterns:
+  MISRA_Warnings: 
+    ['LIN_LOG.txt']
+  Compiler_Warnings: 
+    ['MADE','made']
+misra_warning_report_props:
+  report_prefix:
+    '%Y%m%d_%H%M%S'
+  report_suffix:
+    'MISRA_Warnings_Report.xlsx'
+compiler_warning_report_props:
+  report_prefix:
+    '%Y%m%d_%H%M%S'
+  report_suffix:
+    'Compiler_Warnings_Report.xlsx'
+  filewise_count_header:
+    ['File Name', 'Driver', 'Total Count']
+  warnings_sheet_header:
+    ['File_Path', 'Line Number', 'Warning', 'Note', 'Remarks']
+  driverwise_count_header:
+    ['Driver', 'Count']
+  compiler_warning_pattern_start:
+    '^(.+):(\d+):(\d+): (warning|note): (.+)'
+  compiler_file_pattern:
+    '^(.*?)-(.+)_((made|MADE).+)$'
+  date_time_pattern:
+    '\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}'
+  driver_filter_pattern_prefix:
+    '.*\/((hal)|(mcal)|(eal))\/'
+  driver_filter_pattern_suffix:
+    '\/.*'
+  cfgstat_filter_pattern:
+    '.*\/(hal_cfgstat)\/.*'
+  compiler_warning_pattern_end:
+    '^(.*?):(\d+):(\d+):*'
+  constants:
+    FILE_WISE_CALCULATION:
+      "File Wise Calculation"
+    DRIVER_WISE_COUNT:
+      "Driver Wise Count"

@@ -1,0 +1,48 @@
+Watching for file changes with StatReloader
+[08/Nov/2023 07:53:13] "GET / HTTP/1.1" 200 2152
+[08/Nov/2023 07:53:13] "GET /static/css/custom-styles.css HTTP/1.1" 200 474
+[08/Nov/2023 07:53:13] "GET /static/assets/marelli.png HTTP/1.1" 200 5773
+[08/Nov/2023 07:53:13] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60577
+[08/Nov/2023 07:53:13] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 232948
+Not Found: /favicon.ico
+[08/Nov/2023 07:53:13] "GET /favicon.ico HTTP/1.1" 404 2225
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 08, 2023 - 08:51:25
+Django version 4.1.4, using settings 'log_analysis_dashboard.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 08, 2023 - 08:51:33
+Django version 4.1.4, using settings 'log_analysis_dashboard.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 08, 2023 - 08:52:18
+Django version 4.1.4, using settings 'log_analysis_dashboard.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+/home/jokesta/Documents/Marelli/Marelli_SoW1_Log_Analysis_Automation_Dashboard/log_analysis_dashboard/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 08, 2023 - 08:57:24
+Django version 4.1.4, using settings 'log_analysis_dashboard.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[08/Nov/2023 09:51:07] "GET / HTTP/1.1" 200 2152
+Not Found: /shell
+[08/Nov/2023 09:55:17] "GET /shell?ps HTTP/1.1" 404 2213
+Not Found: /webs/sysTimeCfgEx
+[08/Nov/2023 09:55:17] "POST //webs/sysTimeCfgEx HTTP/1.1" 404 2247

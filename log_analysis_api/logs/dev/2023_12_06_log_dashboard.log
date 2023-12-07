@@ -1,0 +1,272 @@
+[2023-12-06 01:44:12,022 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:45:28,965 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:46:26,468 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:46:49,552 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:47:07,228 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:47:18,635 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:48:39,997 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:49:26,776 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:50:24,940 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:52:37,742 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 01:58:23,770 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:59:05,759 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 01:59:59,159 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'File Name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 292, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 29, in _generate_driverwise_count_sheet_data
+    if driver != self.FILE_WISE_CALCULATION and driver.lower() not in df_driverwise_count[self.filewise_count_header[0]].values():
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'File Name'
+[2023-12-06 02:00:46,593 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:01:21,645 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 292, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 29, in _generate_driverwise_count_sheet_data
+    if driver != self.FILE_WISE_CALCULATION and driver.lower() not in df_driverwise_count[self.filewise_count_header[1]].values():
+TypeError: 'numpy.ndarray' object is not callable
+[2023-12-06 02:02:53,245 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:03:31,365 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:06:22,915 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:06:31,523 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:06:52,538 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:06:56,510 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:09:28,409 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:09:44,155 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:09:52,192 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:10:09,211 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:11:20,613 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:11:22,011 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:12:18,074 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:13:38,864 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:13:42,937 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:14:12,061 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:14:17,316 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:15:06,259 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:20:14,124 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:20:20,702 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:20:45,896 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 34, in _generate_driverwise_count_sheet_data
+    df_driverwise_count = df_driverwise_count.sort_values(drivers)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/frame.py", line 6758, in sort_values
+    k = self._get_label_or_level_values(by, axis=axis)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/generic.py", line 1778, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: array(['can', 'fee', 'hal_arch', 'hal_cfgstat', 'hal_micro', 'mpg'],
+      dtype=object)
+[2023-12-06 02:21:48,982 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:21:53,101 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 34, in _generate_driverwise_count_sheet_data
+    df_driverwise_count = df_driverwise_count.sort_values(drivers.to_list())
+AttributeError: 'numpy.ndarray' object has no attribute 'to_list'
+[2023-12-06 02:22:36,750 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 34, in _generate_driverwise_count_sheet_data
+    df_driverwise_count = df_driverwise_count.sort_values(drivers.tolist())
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/frame.py", line 6740, in sort_values
+    keys = [self._get_label_or_level_values(x, axis=axis) for x in by]
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/frame.py", line 6740, in <listcomp>
+    keys = [self._get_label_or_level_values(x, axis=axis) for x in by]
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/generic.py", line 1778, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'can'
+[2023-12-06 02:23:16,745 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:23:23,472 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Driver'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 34, in _generate_driverwise_count_sheet_data
+    df_driverwise_count = df_driverwise_count[self.filewise_count_header[1]].sort_values(drivers.tolist())
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Driver'
+[2023-12-06 02:23:42,341 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:23:49,385 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 34, in _generate_driverwise_count_sheet_data
+    df_driverwise_count = df_driverwise_count[self.filewise_count_header[1]].sort_values(drivers.tolist())
+TypeError: sort_values() takes 1 positional argument but 2 were given
+[2023-12-06 02:29:15,352 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:29:37,035 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 35, in _generate_driverwise_count_sheet_data
+    df_driverwise_count['Temp_Order'] = df_driverwise_count[self.filewise_count_header[1]].apply(lambda x: df_driverwise_count.index(x))
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/series.py", line 4630, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/apply.py", line 1025, in apply
+    return self.apply_standard()
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/apply.py", line 1076, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2834, in pandas._libs.lib.map_infer
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 35, in <lambda>
+    df_driverwise_count['Temp_Order'] = df_driverwise_count[self.filewise_count_header[1]].apply(lambda x: df_driverwise_count.index(x))
+TypeError: 'RangeIndex' object is not callable
+[2023-12-06 02:31:54,366 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:32:00,175 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 297, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 35, in _generate_driverwise_count_sheet_data
+    df_driverwise_count['Temp_Order'] = df_driverwise_count[self.filewise_count_header[1]].apply(lambda x: drivers.index(x))
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/series.py", line 4630, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/apply.py", line 1025, in apply
+    return self.apply_standard()
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/apply.py", line 1076, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2834, in pandas._libs.lib.map_infer
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 35, in <lambda>
+    df_driverwise_count['Temp_Order'] = df_driverwise_count[self.filewise_count_header[1]].apply(lambda x: drivers.index(x))
+AttributeError: 'numpy.ndarray' object has no attribute 'index'
+[2023-12-06 02:32:15,137 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:32:22,649 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:35:06,975 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:35:12,180 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:35:29,224 GMT] ERROR::log_response() Internal Server Error: /process_log_warnings/
+Traceback (most recent call last):
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_gui/views.py", line 27, in process_log_warnings
+    report_data, report_name = log_dashboard.process_compiler_warnings(files_data)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/app_dashboard.py", line 64, in process_compiler_warnings
+    report_data = cwr().process_compiler_report(log_directory=log_and_report_dir_path, report_path=report_path, props=self.props)
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 299, in process_compiler_report
+    self._generate_driverwise_count_sheet_data()
+  File "/ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py", line 35, in _generate_driverwise_count_sheet_data
+    df_driverwise_count[self.filewise_count_header[1]] = pd.Categorical(df_driverwise_count[self.filewise_count_header[1]], categories=driver, ordered=True)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/arrays/categorical.py", line 368, in __init__
+    dtype = CategoricalDtype._from_values_or_dtype(
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/dtypes/dtypes.py", line 304, in _from_values_or_dtype
+    dtype = CategoricalDtype(categories, ordered)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/dtypes/dtypes.py", line 187, in __init__
+    self._finalize(categories, ordered, fastpath=False)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/dtypes/dtypes.py", line 344, in _finalize
+    categories = self.validate_categories(categories, fastpath=fastpath)
+  File "/home/saldanha/miniconda3/envs/log_analysis/lib/python3.8/site-packages/pandas/core/dtypes/dtypes.py", line 529, in validate_categories
+    raise TypeError(
+TypeError: Parameter 'categories' must be list-like, was 'file wise calculation'
+[2023-12-06 02:35:47,522 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:35:54,423 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:36:31,214 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:36:35,015 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:36:54,481 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:37:52,441 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 02:39:22,086 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:39:35,542 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 02:40:52,380 GMT] INFO::trigger_reload() /ubuntuwork/LearnProjectsVSCode/poc_log_analysis/log_analysis_api/src/services/compiler_warning_ops.py changed, reloading.
+[2023-12-06 03:16:01,073 GMT] WARNING::log_response() Not Found: /favicon.ico
+[2023-12-06 03:16:20,002 GMT] WARNING::log_response() Not Found: /favicon.ico

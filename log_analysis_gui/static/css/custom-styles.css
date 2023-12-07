@@ -1,0 +1,119 @@
+:root {
+    --custom-primary-color: #009CDE; 
+    --custom-secondary-color: #20426B; 
+    --custom-background-color: #FFFFFF; 
+}
+
+.custom-header {
+    background-color: var(--custom-background-color);
+    color: var(--custom-secondary-color); 
+}
+
+#header-text{
+    color: var(--custom-primary-color);
+}
+
+.custom-footer {
+    background-color: var(--custom-primary-color);
+    color: var(--custom-background-color); 
+}
+
+.custom-border {
+    border: var(--custom-primary-color);
+    border-width: 2.5px;
+    border-radius: 20px;
+    border-style: dashed;
+}
+
+.custom-btn {
+    background-color: var(--custom-secondary-color);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: var(--custom-background-color);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0 10px 0 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.custom-btn:hover,
+.custom-btn:focus {
+  background-color: var(--custom-primary-color);
+}
+
+.custom-btn:disabled {
+    background-color: var(--custom-primary-color);
+    color: var(--custom-secondary-color);
+    cursor: not-allowed;
+}
+
+.custom-group-btn {
+    background-color: var(--custom-secondary-color);
+    border-radius: 2px;
+    border-style: none;
+    box-sizing: border-box;
+    color: var(--custom-background-color);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 20px;
+    list-style: none;
+    margin: 1px;
+    outline: none;
+    padding: 6px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.custom-group-btn:hover{
+    background-color: var(--custom-secondary-color);
+    opacity: 0.8;
+}
+.custom-group-btn:focus {
+  background-color: var(--custom-primary-color);
+}
+
+#resultsTable::-webkit-scrollbar-track
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#resultsTable::-webkit-scrollbar
+{
+	width: 8px;
+    height: 8px;
+	background-color: var(--custom-background-color);
+}
+
+#resultsTable::-webkit-scrollbar-thumb
+{
+	background-color: var(--custom-secondary-color);
+	border-radius: 5px;
+}

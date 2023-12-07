@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm custom-header shadow">
+    <a class="navbar-brand" href={% url 'home' %}>
+      <img src="{% static 'assets/marelli.png' %}" width="70px" class="p-2 ms-5"/>
+    </a>
+    <h3 class="p-2 ms-5 mt-2">MISRA</h3>
+    <h3 class="mt-2" id="header-text">Warnings</h3>
+    <h3 class="p-2 mt-2">Automation</h3>
+    <h3 class="mt-2" id="header-text">Dashboard</h3>
+  </nav>
+</body>
+</html>
